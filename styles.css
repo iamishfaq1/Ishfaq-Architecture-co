@@ -1,0 +1,242 @@
+/**************************************
+Name: Ishfaq Ahmed
+Project: Landing Page for Fcc.org.
+Date: 9 Jan 2021
+*************************************/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+nav {
+	
+	background-color: white;
+	box-shadow: 0 2px 7px #888888;
+	position: fixed;
+	width: 100%;
+}
+nav img {
+	display: inline-block;
+	float: left;
+	height: 60px;
+	width: 15%;
+}
+
+nav ul {
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 20px 0;
+}
+nav ul li a {
+	font-weight: 550;
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	letter-spacing: 5px;
+}
+nav ul li a:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+/**********Navigation bar ends here. and Image style starts here;**********/
+.image-container {
+	background-image: url("https://images.unsplash.com/photo-1514971126075-758e7d825812?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJ1aWxkaW5nc3xlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	
+	width: 100%;
+	height: 100vh; /*It need to resize on differnt screen sizes.*/
+}
+
+.image-container img {
+	width: 100px;
+	height: 60px;
+	
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	right: 45%;
+}
+
+@media (max-width: 450px) {
+	.image-container img {
+	display: none;
+}
+}
+/*******Code for Sections below***********/
+
+section {
+	width: 95%;
+	height: auto;
+	margin: 70px auto;
+	
+}
+h2 {
+	font-size: 200%;
+	padding: 20px 0;
+	border-bottom: 0.5px solid grey;
+}
+@media (max-width: 500px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+	
+}
+
+/***************************************
+Section for the Gallery to show Projects
+***************************************/
+
+.container { /*Main div to store other divs inside which images are being placed*/
+	width: 100%;
+	height: 480px;
+	margin-top: 20px;
+}
+
+.container div { /*commmon style for all divs*/
+	width: 25%;
+}
+.gallery { /*div to strore the images inside of it..*/
+	display: inline-block;
+    float: left;
+    width: 25%;
+}
+.gallery img { /*width of the images inside the div*/
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+	.contact {
+	width: 100%;
+	height: 1000px;
+	margin-top: 20px;
+	}
+	.container div {
+	width: 50%;
+	}
+	
+	.gallery {
+	display: inline-block;
+    float: left;
+    width: 50%;
+	}
+}
+
+/***************************************
+Section for the About info.
+***************************************/
+
+@media (max-width: 500px) {
+	.contact {
+	width: 100%;
+	height: 2000px;
+	margin-top: 20px;
+	}
+	.container div {
+	width: 100%;
+	}
+	
+	.gallery {
+	display: inline-block;
+    float: left;
+    width: 100%;
+	}
+}
+
+/***************************************************/
+
+p {
+	font-family: arial;
+	font-size: 1.2rem;
+	font-weight: 500px;
+	line-height: 1.5;
+	text-align: justify;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	
+	/*Now positioning of paragraph*/
+	
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.video {
+	width: 50%;
+	margin: 20px auto;
+}
+@media (max-width: 600px) {
+	p {
+	font-family: arial;
+	font-size: 1.0rem;
+	font-weight: 500px;
+	line-height: 1.4;
+	text-align: justify;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	}
+	.video {
+	width: 100%;
+	}
+}
+/***************************************
+Section for the Contact me input elements
+***************************************/
+
+#para-contact {
+	font-weight: 500px;
+	text-align: left;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+input {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	margin-top: 15px;
+	font-size: 1.2rem;
+}
+input[type=submit] {
+	
+	background-color: black;
+	color: white;
+	width: 200px;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border: transparent;
+
+}
+input[type=submit]:hover {
+	
+	background-color: rgba(0,0,0,0.2);
+	color: black;
+}
+
+/**********Styles for footer of the web page*******/
+footer {
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	margin-top: 50px;
+	text-align: center;
+	color: white;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 70px 0;
+}
